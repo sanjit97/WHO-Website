@@ -6,6 +6,7 @@
   <title>5th UN GRSW</title>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -14,6 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Css File -->
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -30,13 +32,13 @@
         <a class="nav-link" href="culmination.html">CULMINATION EVENT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">SPEAK UP</a>
+        <a class="nav-link" href="speakup.html">SPEAK UP</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://www.change.org/">SIGN PETITIONS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT US</a>
+        <a class="nav-link" href="contactus.html">CONTACT US</a>
       </li>
     </ul>
   </nav>
@@ -57,7 +59,7 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/Carousel/banner.jpg" alt="5th-UN_Safety-Week" width="1100" height="500">
+        <img src="assets/Carousel/banner-main.jpg" alt="5th-UN_Safety-Week" width="1100" height="500">
       </div>
       <div class="carousel-item">
         <img src="assets/Carousel/IMG-20190509-WA0017.jpg" alt="school-children" width="1100" height="500">
@@ -86,7 +88,7 @@
   </div>
 
   <!-- content -->
-  <div class="container">
+  <div class="container-fluid indexcontainer">
 
     <!-- Cities -->
     <br>
@@ -95,30 +97,38 @@
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/datia.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample1" style="text-decoration:none;color:rgb(253,95,0);">
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample1" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard">
+            <img class="card-img-top" src="assets/city wise pics/datia.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">DATIA</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/barabanki.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample2" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample2" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/barabanki.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">BARABANKI</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/patna.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample3" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample3" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/patna.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">PATNA</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
+        </a>
 
         <div class="row" style="margin-top:10px;">
           <div class="col">
@@ -129,13 +139,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schooldatia" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schooldatia" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegedatia" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegedatia" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitydatia" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitydatia" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -203,13 +213,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolbara" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolbara" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegebara" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegebara" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitybara" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitybara" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -252,7 +262,19 @@
 
                   </div>
                   <div id="communitybara" class="container tab-pane fade">
-                    None
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/2.school/1.jpeg"><img src="assets/2.school/1.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/2.school/2.jpeg"><img src="assets/2.school/2.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/2.school/3.jpeg"><img src="assets/2.school/3.jpeg" class="popupimage"></a>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
 
@@ -271,13 +293,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolpatna" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolpatna" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegepatna" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegepatna" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitypatna" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitypatna" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -345,52 +367,60 @@
 
       </div>
     </div>
-
+      <hr>
     <!-- Second row card -->
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/anantapur.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample4" style="text-decoration:none;color:rgb(253,95,0);">
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample4" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/anantapur.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">ANANATAPURAM</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/bhinga.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample5" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample5" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/bhinga.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">BHINGA</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/budgam.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample6" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample6" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/budgam.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">BUDGAM</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
+        </a>
 
         <div class="row" style="margin-top:10px;">
           <div class="col">
             <div class="collapse multi-collapse" id="multiCollapseExample4">
               <div class="card card-body">
 
-                <h4>NGO - SANKALP JYOTI</h4><br>
+                <h4>NGO - RURAL INTEGRATED AND SOCIAL EDUCATION SOCIETY</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolanan" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolanan" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegeanan" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegeanan" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communityanan" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communityanan" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -437,7 +467,26 @@
 
                   </div>
                   <div id="communityanan" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/2.jpeg"><img src="assets/4.community/2.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/4.jpeg"> <img src="assets/4.community/4.jpeg" class="popupimage"> </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/5.jpeg"><img src="assets/4.community/5.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/6.jpeg"><img src="assets/4.community/6.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/7.jpeg"><img src="assets/4.community/7.jpeg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/4.community/11.jpeg"><img src="assets/4.community/11.jpeg" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -456,20 +505,36 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolbhinga" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolbhinga" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegebhinga" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegebhinga" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitybhinga" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitybhinga" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="schoolbhinga" class="container tab-pane active">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/5.school/1.png"><img src="assets/5.school/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/5.school/2.png"> <img src="assets/5.school/2.png" class="popupimage"> </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/5.school/3.png"><img src="assets/5.school/3.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/5.school/4.png"><img src="assets/5.school/4.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/5.school/5.png"><img src="assets/5.school/5.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="collegebhinga" class="container tab-pane fade">
 
@@ -528,13 +593,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolbudgam" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolbudgam" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegebudgam" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegebudgam" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitybudgam" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitybudgam" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -600,64 +665,113 @@
       </div>
     </div>
 
+      <hr>
     <!-- Third row card -->
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/farrukhabad.jfif" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample7" style="text-decoration:none;color:rgb(253,95,0);">
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample7" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/farrukhabad.jfif" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">FARRUKHABAD</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/muzaffarpur.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample8" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample8" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/muzaffarpur.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">MUZAFFARPUR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/lucknow.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample9" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample9" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/lucknow.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">LUCKNOW</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
+        </a>
+
 
         <div class="row" style="margin-top:10px;">
           <div class="col">
             <div class="collapse multi-collapse" id="multiCollapseExample7">
               <div class="card card-body">
 
-                <h4>NGO - Mother Nirmala Foundation Uttar Pradesh</h4><br>
+                <h4>NGO - MOTHER NIRMALA FOUNDATION UTTAR PRADESH</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolfarr" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolfarr" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegefarr" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegefarr" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communityfarr" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communityfarr" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="schoolfarr" class="container tab-pane active">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/1.png"><img src="assets/farruk/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/2.png"><img src="assets/farruk/2.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/3.png"><img src="assets/farruk/3.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/4.png"><img src="assets/farruk/4.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/5.png"><img src="assets/farruk/5.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/6.png"><img src="assets/farruk/6.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="collegefarr" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/7.png"><img src="assets/farruk/7.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/8.png"><img src="assets/farruk/8.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/9.png"><img src="assets/farruk/9.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="communityfarr" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/10.png"><img src="assets/farruk/10.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/11.png"><img src="assets/farruk/11.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/farruk/12.png"><img src="assets/farruk/12.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -676,28 +790,59 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolmuza" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolmuza" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegemuza" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegemuza" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitymuza" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitymuza" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="schoolmuza" class="container tab-pane active">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/1.png"><img src="assets/muzzafar/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/2.png"><img src="assets/muzzafar/2.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/3.png"><img src="assets/muzzafar/3.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="collegemuza" class="container tab-pane fade">
-
-                    None
-
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/4.png"><img src="assets/muzzafar/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/5.png"><img src="assets/muzzafar/2.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/6.png"><img src="assets/muzzafar/3.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="communitymuza" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/7.png"><img src="assets/muzzafar/7.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/9.png"><img src="assets/muzzafar/9.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/8.png"><img src="assets/muzzafar/8.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/muzzafar/10.png"><img src="assets/muzzafar/10.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -712,17 +857,17 @@
             <div class="collapse multi-collapse" id="multiCollapseExample9">
               <div class="card card-body">
 
-                <h4>NGO - Pratap Samajik Sewa Sansthan</h4><br>
+                <h4>NGO - PRATAP SAMAJIK SEWA SANSTHAN</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolluck" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolluck" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegeluck" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegeluck" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communityluck" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communityluck" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -748,23 +893,34 @@
                     </div>
                   </div>
                   <div id="collegeluck" class="container tab-pane fade">
-
-                    None
-
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.college/1.jpg"><img src="assets/7.college/1.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.college/2.jpg"><img src="assets/7.college/2.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.college/3.jpg"><img src="assets/7.college/3.jpg" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="communityluck" class="container tab-pane fade">
                     <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.community/IMG_20190510_142106.jpg"><img src="assets/7.community/IMG_20190510_142106.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.community/IMG_20190510_142243.jpg"><img src="assets/7.community/IMG_20190510_142243.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/7.community/IMG_20190510_142257.jpg"><img src="assets/7.community/IMG_20190510_142257.jpg" class="popupimage"></a>
+                      </div>
                       <div class="col-lg-4 col-md-6">
                         <a href="assets/7.community/IMG_20190503_104349.jpg"><img src="assets/7.community/IMG_20190503_104349.jpg" class="popupimage"></a>
                       </div>
                       <div class="col-lg-4 col-md-6">
                         <a href="assets/7.community/IMG_20190503_152306.jpg"> <img src="assets/7.community/IMG_20190503_152306.jpg" class="popupimage"> </a>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <a href="assets/7.community/IMG_20190503_152423.jpg"><img src="assets/7.community/IMG_20190503_152423.jpg" class="popupimage"></a>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <a href="assets/7.community/IMG_20190503_152432.jpg"><img src="assets/7.community/IMG_20190503_152432.jpg" class="popupimage"></a>
                       </div>
                       <div class="col-lg-4 col-md-6">
                         <a href="assets/7.community/IMG_20190503_153620.jpg"><img src="assets/7.community/IMG_20190503_153620.jpg" class="popupimage"></a>
@@ -781,34 +937,43 @@
       </div>
     </div>
 
+      <hr>
     <!-- Fourth row card -->
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/maharaj ganj.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample10" style="text-decoration:none;color:rgb(253,95,0);">
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample10" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/maharaj ganj.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">MAHARAJGANJ</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/kanpur nagar.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample11" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample11" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/kanpur nagar.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">KANPUR NAGAR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/fatehghar.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample12" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample12" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/fatehghar.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">FATEHGHAR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
+        </a>
 
         <div class="row" style="margin-top:10px;">
           <div class="col">
@@ -819,13 +984,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolmaharaj" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolmaharaj" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegemaharaj" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegemaharaj" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitymaharaj" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitymaharaj" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -898,13 +1063,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolkanpur" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolkanpur" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegekanpur" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegekanpur" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitykanpur" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitykanpur" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -930,8 +1095,17 @@
                     </div>
                   </div>
                   <div id="collegekanpur" class="container tab-pane fade">
-
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/9.college/1.png"><img src="assets/9.college/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/9.college/2.png"><img src="assets/9.college/2.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/9.college/3.png"><img src="assets/9.college/3.png" class="popupimage"></a>
+                      </div>
+                    </div>
 
                   </div>
                   <div id="communitykanpur" class="container tab-pane fade">
@@ -966,31 +1140,66 @@
             <div class="collapse multi-collapse" id="multiCollapseExample12">
               <div class="card card-body">
 
-                <h4>NGO - Priyanka Convent Shishu Sadan</h4><br>
+                <h4>NGO - PRIYANKA CONVENT SHISHU SADAN</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolfathe" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolfathe" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegefathe" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegefathe" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communityfathe" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communityfathe" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="schoolfathe" class="container tab-pane active">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/1.png"><img src="assets/fatheghar/1.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/2.png"><img src="assets/fatheghar/2.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/3.png"><img src="assets/fatheghar/3.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/4.png"><img src="assets/fatheghar/4.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/5.png"><img src="assets/fatheghar/5.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="collegefathe" class="container tab-pane fade">
-
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/6.png"><img src="assets/fatheghar/6.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/7.png"><img src="assets/fatheghar/7.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/8.png"><img src="assets/fatheghar/8.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="communityfathe" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/9.png"><img src="assets/fatheghar/9.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/10.png"><img src="assets/fatheghar/10.png" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/fatheghar/11.png"><img src="assets/fatheghar/11.png" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -1002,51 +1211,60 @@
       </div>
     </div>
 
+    <hr>
     <!-- Fifth row card -->
     <div class="row">
       <div class="col-lg-12">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/saharanpur.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body" id="t">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample13" style="text-decoration:none;color:rgb(253,95,0);">
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample13" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/saharanpur.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">SAHARANPUR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/mahmudabad sitapur.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample14" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample14" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/mahmudabad sitapur.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;width:268px;">MAHMUDABAD SITAPUR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="assets/city wise pics/Jaipur.jpg" alt="Card image" style="height:200px;background-size:cover;">
-          <div class="card-body">
-            <a data-toggle="collapse" class="city-name" href="#multiCollapseExample15" style="text-decoration:none;color:rgb(253,95,0);">
+        </a>
+
+        <a data-toggle="collapse" class="city-name" href="#multiCollapseExample15" style="text-decoration:none;color:rgb(254,105,37);">
+          <div class="card mycard" >
+            <img class="card-img-top" src="assets/city wise pics/Jaipur.jpg" alt="Card image" style="height:200px;background-size:cover;">
+            <div class="card-body city-body">
+
               <h4 class="card-title" style="text-align:center;">JAIPUR</h4>
-            </a>
+
+            </div>
           </div>
-        </div>
+        </a>
 
         <div class="row" style="margin-top:10px;">
           <div class="col">
             <div class="collapse multi-collapse" id="multiCollapseExample13">
               <div class="card card-body">
 
-                <h4>NGO - Sarokar Ek Pahal Samajik Sansthan</h4><br>
+                <h4>NGO - SAROKAR EK PAHAL SAMAJIK SANSTHAN</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolsaharanpur" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolsaharanpur" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegesaharanpur" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegesaharanpur" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitysaharanpur" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitysaharanpur" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -1118,17 +1336,17 @@
             <div class="collapse multi-collapse" id="multiCollapseExample14">
               <div class="card card-body">
 
-                <h4>NGO - Aman Foundation</h4><br>
+                <h4>NGO - AMAN FOUNDATION</h4><br>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schoolmahmudabad" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schoolmahmudabad" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegemahmudabad" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegemahmudabad" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communitymahmudabad" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communitymahmudabad" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
@@ -1201,27 +1419,95 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#schooljaipur" style="text-decoration:none;color:rgb(253,95,0);">School Activities</a>
+                    <a class="nav-link active" data-toggle="tab" href="#schooljaipur" style="text-decoration:none;color:rgb(254,105,37);">School Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#collegejaipur" style="text-decoration:none;color:rgb(253,95,0);">College Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#collegejaipur" style="text-decoration:none;color:rgb(254,105,37);">College Activities</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#communityjaipur" style="text-decoration:none;color:rgb(253,95,0);">Community Activities</a>
+                    <a class="nav-link" data-toggle="tab" href="#communityjaipur" style="text-decoration:none;color:rgb(254,105,37);">Community Activities</a>
                   </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="schooljaipur" class="container tab-pane active">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/assets/13/014.JPG"><img src="assets/13/014.JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/32.jpg"> <img src="assets/13/32.jpg" class="popupimage"> </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/a%20002.JPG"><img src="assets/13/a%20002.JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/activity4.jpg"><img src="assets/13/activity4.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/DSC_4469.JPG"><img src="assets/13/DSC_4469.JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG_1517.JPG"><img src="assets/13/IMG_1517.JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/SSA51096%20-%20Copy.JPG"> <img src="assets/13/SSA51096%20-%20Copy.JPG" class="popupimage"> </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/photo%202%20(2).JPG"><img src="assets/13/photo%202%20(2).JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG_2345.JPG"><img src="assets/13/IMG_2345.JPG" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG_20190513_114550.jpg"><img src="assets/13/IMG_20190513_114550.jpg" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="collegejaipur" class="container tab-pane fade">
-
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/20190518_141551.jpg"><img src="assets/13/20190518_141551.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/20190518_141629.jpg"><img src="assets/13/20190518_141629.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518144814.jpg"><img src="assets/13/IMG20190518144814.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/20190518_144001.jpg"><img src="assets/13/20190518_144001.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/20190518_143704.jpg"><img src="assets/13/20190518_143704.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518115419.jpg"><img src="assets/13/IMG20190518115419.jpg" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                   <div id="communityjaipur" class="container tab-pane fade">
-                    None
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518113843.jpg"><img src="assets/13/IMG20190518113843.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518114058.jpg"><img src="assets/13/IMG20190518114058.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518114858.jpg"><img src="assets/13/IMG20190518114858.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518115047.jpg"><img src="assets/13/IMG20190518115047.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518122532.jpg"><img src="assets/13/IMG20190518122532.jpg" class="popupimage"></a>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <a href="assets/13/IMG20190518115419.jpg"><img src="assets/13/IMG20190518115419.jpg" class="popupimage"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -1232,13 +1518,27 @@
 
       </div>
     </div>
+  </div>
+  <hr>
+  <br>
+  <footer style="background-color:rgb(28,75,130);padding:20px 16px 8px;font-family:'Poppins', sans-serif;color:white;height:56px;">
+    <div class="container-fluid">
+      <h6 style="float:left;">Maintained By Indian Road Safety Campaign</h6>
+      <a href="contactus.html" style="text-decoration:none; cursor:pointer;color:white;">
+        <h6 style="float:right;margin-left:15px;">Contact Us</h6>
+      </a>
+      <a href="https://ww2.road-safety.co.in/" style="text-decoration:none; cursor:pointer;color:white;">
+        <h6 style="float:right">About IRSC</h6>
+      </a>
+    </div>
+  </footer>
 
 
-<script type="text/javascript">
-// $(".city-name").on("click", function() {
-//   $(this).parentNode.style.css("background-color", "rgb(28,75,130)");
-// })
-</script>
+  <script type="text/javascript">
+    $(".mycard").click(function() {
+      $(this).toggleClass("blue");
+    });
+  </script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@ nav ul li a{
 }
 
 nav a:hover{
-  color: rgb(253,95,0);
+  color: rgb(254,105,37);
 }
 
 /* Carousel */
@@ -37,15 +37,18 @@ nav a:hover{
     margin-top:40px;
   }
   .container h2{
-    color: rgb(253,95,0);
+    color: rgb(254,105,37);
   }
   .container p{
     color: black;
   }
+  .indexcontainer{
+    padding: 20px 10px 20px 100px;
+  }
 
 /*Cities*/
 .card-header{
-  background-color: rgb(253,95,0);
+  background-color: rgb(254,105,37);
 }
 .card-header a{
   color: white;
@@ -67,4 +70,53 @@ nav a:hover{
 }
 .card-body{
   width: 100%;
+}
+.city-body.blue{
+  background-color: rgb(28,75,130);
+}
+.card.blue{
+  background-color: rgb(28,75,130);
+}
+
+.mycard{
+  width:300px;
+}
+
+
+hr{
+  width: 60%;
+  margin-left:100px;
+
+}
+
+/* Media Queries */
+@media screen and (max-width:1199px){
+  .indexcontainer{
+    padding: 20px 10px 20px 50px;
+  }
+  .mycard{
+    width:250px;
+  }
+}
+@media screen and (max-width:992px){
+  .indexcontainer{
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width:767px){
+  .indexcontainer{
+    margin-left: 20px;
+  }
+
+}
+@media screen and (max-width:500px){
+  .indexcontainer{
+    padding: 20px 10px 20px 20px;
+  }
+  .mycard{
+    width:200px;
+  }
+  .container{
+
+  }
 }
